@@ -8,11 +8,10 @@ namespace Hacknot
         static void Main(string[] args)
         {
             Commands.AddCommands();
-            Computer.createComputer();
             bool isRunning = true;
+            Console.WriteLine("Hack.NET\n(c) 2020 SamCo\n");
             while (isRunning)
             {
-                Console.WriteLine("Hack.NET\n(c) 2020 SamCo\n");
                 Console.Write(">");
                 string command = Console.ReadLine();
                 var argv = Arguments.SplitCommandLine(command);
@@ -22,18 +21,7 @@ namespace Hacknot
                     {
                         continue;
                     }
-                    else if (argv[0] == "exit")
-                    {
-                        Commands.exitApplication(args);
-                    }
-                    else if (argv[0] == "help")
-                    {
-                        Commands.helpCommand(args);
-                    }
-                    /*else if (argv[0] == "file")
-                    {
-                        Commands.fileSizeCommand(args);
-                    }*/
+                    Commands.RunCommand(argv);
                 }                
             }
         }
