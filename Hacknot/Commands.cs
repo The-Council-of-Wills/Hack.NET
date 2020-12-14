@@ -20,14 +20,20 @@ namespace Hacknot
         internal static void helpCommand(string[] args)
         {
             Console.WriteLine("--- Hack.NET Commands List ---");
-            Console.WriteLine("exit        - Exits the session");
-            Console.WriteLine("help        - Prints the command list");
-            //Console.WriteLine("file [file] - Prints size of provided file");
+            Console.WriteLine("exit               - Exits the session");
+            Console.WriteLine("help               - Prints the command list");
+            //Console.WriteLine("connect [computer] - Connects to a computer");
+            //Console.WriteLine("file [file]        - Prints size of provided file");
         }
 
         internal static void exitApplication(string[] args)
         {
             Environment.Exit(0);
+        }
+
+        internal static void connectCommand(string[] args)
+        {
+            
         }
 
         /*internal static void echo(string[] args)

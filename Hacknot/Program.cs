@@ -8,6 +8,7 @@ namespace Hacknot
         static void Main(string[] args)
         {
             Commands.AddCommands();
+            Computer.createComputer();
             bool isRunning = true;
             while (isRunning)
             {
