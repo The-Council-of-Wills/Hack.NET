@@ -9,13 +9,13 @@ namespace Hacknot
     class Computer
     {
         public static string name;
-        public string ip;
-        public int security;
-        public bool isAdmin;
-        public string username;
-        public string password;
+        public static string ip;
+        public static int security;
+        public static bool isAdmin;
+        public static string username;
+        public static string password;
 
-        // TODO: idk but you should be able to see what, you're not dumb
+        // TODO: idk but you should be able to see what, you're not dumb (edit: maybe I am)
         public static bool computerExists()
         {
             return true;

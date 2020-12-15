@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Hacknot
 {
-    class Folder
+    class Player
     {
         public static string name;
-        public static List<Folder> contentFolders;
-        public static List<string> contentFiles;
     }
 }

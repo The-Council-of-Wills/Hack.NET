@@ -8,6 +8,6 @@ namespace Hacknot
 {
     class Filesystem
     {
-        
+        private static string root = "/";
     }
 }

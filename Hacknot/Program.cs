@@ -10,6 +10,12 @@ namespace Hacknot
             Commands.AddCommands();
             bool isRunning = true;
             Console.WriteLine("Hack.NET\n(c) 2020 SamCo\n");
+            for (int i = 0; i < 5; i++)
+            {
+                Computer.createComputer();
+                Console.WriteLine($"DEBUG: Computer {i} created with name {Computer.name}");
+
+            }
             while (isRunning)
             {
                 Console.Write(">");

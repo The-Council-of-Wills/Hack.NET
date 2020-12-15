@@ -8,9 +8,9 @@ namespace Hacknot
 {
     class File
     {
-        public string name;
-        public string content;
-        public int size;
+        public static string name;
+        public static string content;
+        public static int size;
         public enum type
         {
             Text,

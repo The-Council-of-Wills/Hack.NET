@@ -61,9 +61,9 @@ namespace Hacknot
 
         /*internal static void fileSizeCommand(string[] args)
         {
-            if (File.fileNames.Contains(args.ToString()))
+            if (Folder.contentFolders.Contains(args))
             {
-                Console.WriteLine($"{File.name}: {File.fileSize}KB");
+                Console.WriteLine($"{File.name}: {File.size}KB");
             }
             else
             {
