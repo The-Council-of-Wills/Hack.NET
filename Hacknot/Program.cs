@@ -10,6 +10,10 @@ namespace Hacknot
             Commands.AddCommands();
             bool isRunning = true;
             Console.WriteLine("Hack.NET\n(c) 2020 SamCo\n");
+            Console.Write("Enter your username: ");
+            Player.name = Console.ReadLine();
+            Console.WriteLine($"Your username is: {Player.name}");
+            Computer.createPlayerComputer(Player.name);
             for (int i = 0; i < 5; i++)
             {
                 Computer.createComputer();
