@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Hacknot
 {
-    class Folder
+    public class Folder
     {
-        public static string name;
-        public static List<Folder> contentFolders;
-        public static List<string> contentFiles;
+        public string name = "";
+        public List<Folder> contentFolders;
+        public List<string> contentFiles;
     }
 }

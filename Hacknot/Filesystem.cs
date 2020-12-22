@@ -8,6 +8,16 @@ namespace Hacknot
 {
     class Filesystem
     {
-        private static string root = "/";
+        private string root = "/";
+    }
+
+    public abstract class FilesystemEntry
+    {
+        public string name {get; set;}
+        public Folder? parent {get; set;}
+        protected FilesystemEntry(string name, Folder? parent)
+        {
+            
+        }
     }
 }

@@ -16,7 +16,7 @@ namespace Hacknot
             commandsList.Add("echo", echo);
             //commandsList.Add("connect", connectCommand);
             //commandsList.Add("file", fileSizeCommand);
-            commandsList.Add("whoami", whoamiCommand);
+            //commandsList.Add("whoami", whoamiCommand);
         }
 
         public static void RunCommand(string[] args)
@@ -39,7 +39,7 @@ namespace Hacknot
             Console.WriteLine("echo               - Prints the arguments after the echo command");
             //Console.WriteLine("connect [computer] - Connects to a computer");
             //Console.WriteLine("file [file]        - Prints size of provided file");
-            Console.WriteLine("whoami             - Prints user currently signed into the computer.");
+            //Console.WriteLine("whoami             - Prints user currently signed into the computer.");
         }
 
         internal static void exitApplication(string[] args)
@@ -74,9 +74,10 @@ namespace Hacknot
             }
         }*/
 
-        internal static void whoamiCommand(string[] args)
+        /*internal static void whoamiCommand(string[] args)
         {
-            Console.WriteLine($"Currently signed in as: {Computer.username}");
-        }
+            var comp = new Computer();
+            Console.WriteLine($"Currently signed in as: {comp.username}");
+        }*/
     }
 }

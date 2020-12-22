@@ -8,6 +8,6 @@ namespace Hacknot
 {
     class Player
     {
-        public static string name;
+        public static string name = "";
     }
 }
