@@ -17,7 +17,6 @@ namespace Hacknot
             {
                 Computer.createComputer();
                 Console.WriteLine($"DEBUG: Computer {i} created.");
-
             }
             while (isRunning)
             {

@@ -17,6 +17,7 @@ namespace Hacknot
             //commandsList.Add("connect", connectCommand);
             //commandsList.Add("file", fileSizeCommand);
             //commandsList.Add("whoami", whoamiCommand);
+            commandsList.Add("dbg_list", keyValCommand);
         }
 
         public static void RunCommand(string[] args)
@@ -79,5 +80,13 @@ namespace Hacknot
             var comp = new Computer();
             Console.WriteLine($"Currently signed in as: {comp.username}");
         }*/
+
+        internal static void keyValCommand(string[] args)
+        {
+            foreach (KeyValuePair<string, Computer> kvp in Computer.Map)
+            {
+                Console.WriteLine($"Key = {kvp.Key}, Value = {kvp.Value.name}");
+            }
+        }
     }
 }

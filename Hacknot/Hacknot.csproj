@@ -3,11 +3,9 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-    <!-- pls leave platforms btw kthx -->
-    <Platforms>AnyCPU;x64;x86</Platforms>
+    <Platforms>AnyCPU</Platforms>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-  <!--It's literally unnecessary but ok kekw-->
   <ItemGroup>
     <None Include="Usernames.txt">
       <Link>%(FileName)%(Extension)</Link>

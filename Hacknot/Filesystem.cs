@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace Hacknot
 {
+    public enum FilesystemType {
+        File,
+        Folder
+    }
+
     class Filesystem
     {
         private string root = "/";
